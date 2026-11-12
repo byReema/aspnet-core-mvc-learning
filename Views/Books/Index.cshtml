@@ -1,0 +1,19 @@
+@* @model List<MyMvcApp.Models.Book> *@
+@model IEnumerable<MyMvcApp.Models.Book>
+
+<h1> My books</h1>
+
+<table class="table">
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Year</th>
+    </tr>
+
+@*  Model : the actual list the controller passed in View(books) *@
+    @foreach( var book in Model)
+    {
+        @* reusable piece of Html, used for footer , header  *@
+        <partial name="_BookRow" model="book" />
+    }
+</table>

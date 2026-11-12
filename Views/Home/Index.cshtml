@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Hi @ViewBag.name , today you are learning @ViewBag.course !</p>
+    <p>Hint : @ViewBag.today.DayOfWeek</p>
+
+    @if(ViewBag.visitCount == 1)
+    {
+        <p>nice to meet u !</p>
+    }
+    else
+    {
+        <p>welcom back ! for the @ViewBag.visitCount time</p>
+    }
+</div>

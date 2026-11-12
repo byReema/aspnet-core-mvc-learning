@@ -1,0 +1,17 @@
+@model MyMvcApp.Models.Book
+
+<h1>Add a Book</h1>
+
+<form method="post">
+    <label>Title</label>
+    @* name must match the Book property *@
+    <input name="Title" />
+
+    <label>Author</label>
+    <input name="Author" />
+
+    <label>Year</label>
+    <input name="Year" />
+
+    <button type="submit">Save</button>
+</form>
